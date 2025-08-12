@@ -1,12 +1,15 @@
 function getComputerChoice() {
-  let randomOption = Math.floor(Math.random() * 3);
-  if (randomOption === 0) {
+  let computerChoice = Math.floor(Math.random() * 3);
+  if (computerChoice === 0) {
     return "rock";
-  } else if (randomOption === 1) {
+  } else if (computerChoice === 1) {
     return "paper";
   } else {
     return "scissors";
   }
 }
 
-
+function getHumanChoice() {
+  let humanchoice = prompt('Choose "rock" "paper" or "scissors"');
+  return humanchoice;
+}
